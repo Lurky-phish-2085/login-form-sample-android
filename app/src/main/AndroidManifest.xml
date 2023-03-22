@@ -11,9 +11,11 @@
         android:theme="@style/Theme.POG" >
         <activity
             android:name=".RegisterPage"
+            android:theme="@style/Theme.POG.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".ui.login.LoginActivity"
+            android:theme="@style/Theme.POG.NoActionBar"
             android:exported="false"
             android:label="@string/title_activity_login" />
         <activity

@@ -8,6 +8,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -41,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         login.setOnClickListener(this);
         register = findViewById(R.id.btnBackToLogin);
         register.setOnClickListener(this);
-
 
         email = findViewById(R.id.editTextEmailAddressRegister);
         password = findViewById(R.id.editTextPasswordRegister);
