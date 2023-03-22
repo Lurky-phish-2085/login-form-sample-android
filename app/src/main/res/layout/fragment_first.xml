@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            tools:ignore="VectorDrawableCompat"
+            app:srcCompat="@drawable/baseline_copyright_24" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8E8E8"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:text="Hello, Welcome Back!!!"
+                android:textColor="@color/purple_700"
+                android:textSize="25dp" />
+
+            <TextView
+                android:gravity="left"
+                android:id="@+id/label_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email Address" />
+
+            <EditText
+                android:id="@+id/editTextEmailAddressRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:backgroundTint="@color/purple_700"
+                android:hint="juandelacruz@gmail.com"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:gravity="left"
+                android:id="@+id/label_Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="********"
+                android:layout_marginTop="20dp"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/editTextPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="********"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple_700"
+                android:ems="10"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/submitRegisterData"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Submit"
+                app:cornerRadius="0dp"
+                />
+
+            <Button
+                android:id="@+id/btnBackToLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:textColor="@color/purple_700"
+                android:textAllCaps="false"
+                android:text="Create New Account"
+                app:cornerRadius="0dp"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
